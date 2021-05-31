@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Tabla de usuarios con AJAX</title>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,600" rel="stylesheet"> 
+	<script src="https://kit.fontawesome.com/ee726eb0d9.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="contenedor">
+		<header>
+			<h1>Tabla de Usuarios</h1>
+			<div>
+				<button id="btn_cargar_usuarios" class="btn active">Cargar Usuarios</button>
+			</div>
+		</header>
+		<main>
+			<form id="form" class="formulario">
+				<input type="text" name="name" id="name" placeholder="Nombre">
+				<input type="text" name="age" id="age" placeholder="Edad">
+				<input type="text" name="country" id="country" placeholder="Pais">
+				<input type="text" name="email" id="email" placeholder="Correo">
+				<button type="submit" class="btn" id="btn-submit" status = "not-edit">Agregar</button>
+			</form>
+			<div class="error_box" id="error_box"></div>
+			<table class="tabla">
+				<thead>
+					<th>ID</th>
+					<th>Nombre</th>
+					<th>Edad</th>
+					<th>Pais</th>
+					<th>Correo</th>
+					<th>Acciones</th>
+				</thead>
+				<tbody id="table"></tbody>
+			</table>
+			<div class="loader" id="loader"></div>
+		</main>
+	</div>
+	<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+	<script src="js/main.js" type="module"></script>
+</body>
+</html>
