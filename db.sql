@@ -1,0 +1,10 @@
+CREATE DATABASE ajax ENCODING utf8mb4; 
+
+CREATE TABLE users (
+    id INT AUTO_INCREMENT NOT NULL,
+    name CHAR(255) NOT NULL,
+    age TINYINT(3) NOT NULL,
+    country VARCHAR(255) NOT NULL,
+    email CHAR(255) NOT NULL, 
+    PRIMARY KEY(id)
+) ENGINE Innodb;
